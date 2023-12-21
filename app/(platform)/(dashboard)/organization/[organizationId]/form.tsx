@@ -8,7 +8,7 @@ import { FormButton } from "./form-button";
 
 
 export const Form = () => {
-    const initialState = { message : null, errors: {} };
+    const initialState = { message: null, errors: {} };
     const [state, dispatch] = useFormState(create, initialState);
 
     return (
@@ -16,7 +16,7 @@ export const Form = () => {
             <div className="flex flex-col space-y-2">
                 <FormInput errors={state?.errors} />
             </div>
-            <FormButton/>             
+            <FormButton />
         </form>
     )
 }
